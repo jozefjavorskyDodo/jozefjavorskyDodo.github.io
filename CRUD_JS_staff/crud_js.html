@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dodo's web tryout." />
+    <meta name="author" content="Dodo ==> jozef.javorsky.strom44zem88@gmail.com" />
+    <link rel="stylesheet" href="../CRUD_JS_staff/styles/default.css" />
+</head>
+
+<body>
+    <header>
+        <h2 id="header-h2">&nbsp;"EMPLOYEES TABLE LIST" ~~ MAX AMOUNT 30&nbsp;</h2>
+    </header>
+    <main id="body-main">
+        <div id="first-div">
+            <nav id="data-nav">
+                <button class="dataBttn" id="empty-data-bttn">EMPTY DATA</button>
+                <button class="dataBttn" id="two-data-items-bttn">2 DATA ITEMS</button>
+                <button class="dataBttn" id="fifteen-data-items-bttn">15 DATA ITEMS</button>
+            </nav>
+            <nav id="pagination-nav">
+                <button class="paginationBttn" id="pagination-bttn">pagination</button>
+                <button class="paginationBttn" id="previous-bttn">previous&nbsp;&lt;--</button>
+                <button class="paginationBttn" id="next-bttn">--&gt;&nbsp;next</button>
+            </nav>
+            <nav id="scrollbar-nav">
+                <button class="scrollbarBttn" id="scrollbar-bttn">scrollbar</button>
+            </nav>
+        </div>
+        <div id="pseudo-container">
+            <div id="crud-operations"></div>
+            <div id="change-content-area">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>| First Name |</th>
+                                <th>| Last Name |</th>
+                                <th>| Department |</th>
+                                <th>| Position |</th>
+                                <th>| Start Date |</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div id="scrollable-div">
+                    <table>
+                        <thead>
+                            <tr id="row-to-collapse">
+                                <th>| First Name |</th>
+                                <th>| Last Name |</th>
+                                <th>| Department |</th>
+                                <th>| Position |</th>
+                                <th>| Start Date |</th>
+                            </tr>
+                        </thead>
+                        <tbody id="append-to-sub-part"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="upper-of-footer-div">
+            <nav id="crud-nav">
+                <button class="crudBttn" id="add-bttn">ADD</button>
+                <button class="crudBttn" id="profile-bttn">PROFILE</button>
+                <button class="crudBttn" id="edit-bttn">EDIT</button>
+                <button class="crudBttn" id="remove-bttn">REMOVE</button>
+            </nav>
+            <nav id="sort-nav">
+                <button class="sortBttn" id="sort-firstname-bttn">Sort by : First Name</button>
+                <button class="sortBttn" id="sort-lastname-bttn">Last Name</button>
+                <button class="sortBttn" id="sort-startdateyear-bttn">Start Date Year</button>
+            </nav>
+            <br />
+            <nav id="filter-search-nav">
+                <button id="filter-search-bttn">Filter by Search in First & Last Name</button>
+            </nav>
+        </div>
+    </main>
+    <footer>
+        <address id="footer-address">&#x1F916;&nbsp;jozef.javorsky.strom44zem88@gmail.com&nbsp;&#x1F916;</address>
+    </footer>
+    <div id="crud-js-scripts-container">
+        <script type="module" src="../CRUD_JS_staff/scripts/data.js" async></script>
+        <script src="../CRUD_JS_staff/scripts/dataBttns_css.js" defer></script>
+        <script src="../CRUD_JS_staff/scripts/crudBttns_css.js" defer></script>
+        <script src="../CRUD_JS_staff/scripts/sortBttns_css.js" defer></script>
+        <script src="../CRUD_JS_staff/scripts/filterSearchBttn_css.js" defer></script>
+        <script src="../CRUD_JS_staff/scripts/paginationBttn_css.js" defer></script>
+        <script src="../CRUD_JS_staff/scripts/scrollbarBttn_css.js" defer></script>
+        <script type="module" src="../CRUD_JS_staff/scripts/state_events.js"></script>
+    </div>
+</body>
+
+</html>
